@@ -1,0 +1,81 @@
+#CIOs-Bg {
+    @include backImage("../images/heroBg/CIOs-Bg.png", to left, 0, 0, 50% top);
+
+    #CIOsLink {
+        padding: 6rem 0;
+
+        @include breakpoint($small) {
+            padding: 12rem 0;
+        }
+    }
+}
+
+#CIOs-info {
+    .linkContant {
+        p {
+            text-align: center;
+        }
+    }
+
+    .floatingElement {
+        text-align: center;
+        margin: 10rem 0;
+
+        @include breakpoint($medium) {
+            margin: 10rem 5rem;
+        }
+
+
+        .floating-Section {
+            margin-bottom: 2rem;
+
+            @include breakpoint($medium) {
+                margin: 2rem 10rem;
+            }
+
+
+            @include clearfix;
+
+            .image {
+                background-color: $black;
+                display: block;
+                padding-top: 5rem;
+                height: 25rem;
+
+                $item-width: 100%;
+
+                width: calc(#{$item-width}/1);
+                float: left;
+
+                @include breakpoint($small) {
+                    width: calc(#{$item-width}/3);
+                }
+
+
+                img {
+                    margin: 0 auto;
+                }
+            }
+
+            .floating-Text {
+                background-color: $backgroudgray;
+                height: 25rem;
+                vertical-align: middle;
+                display: table-cell;
+
+                h3 {
+                    text-align: left;
+                    padding: 0 4rem;
+                    padding-bottom: 2.5rem;
+                }
+
+                p {
+                    text-align: left;
+                    display: block;
+                    line-height: 1.5rem;
+                    padding: 0 4rem;
+                }
+            }
+        }
+    }
+}

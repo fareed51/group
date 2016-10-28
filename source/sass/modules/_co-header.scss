@@ -1,0 +1,161 @@
+#header {
+    .helpingAuthorities {
+        ul {
+            text-align: center;
+
+            li {
+                display: none;
+
+                @include breakpoint($small) {
+                    display: inline-block;
+                    padding: 1rem 2rem;
+                    font-weight: $bold;
+                    margin: 0 auto;
+
+                    span {
+                        color: $black;
+                        cursor: auto;
+                    }
+                }
+
+
+                a {
+                    color: #bfbfbf;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+
+    .companyBrand {
+        margin: 2rem 0;
+
+        @include clearfix;
+
+        .companyLogo {
+            @include span(6 of 12);
+
+            .logo {
+                background: url(../images/logoImages/axelogo.png) 0 5px no-repeat;
+                width: 20rem;
+                height: 5rem;
+            }
+
+            .logo: before {
+                background: url(../images/logoImages/axelogo.png) 0 5px no-repeat;
+            };
+
+            .logo:hover, .logo:active, .logo:focus {
+                background: url(../images/logoImages/axelogo_over.png) 0 5px no-repeat;
+                cursor: pointer;
+            }
+        }
+
+        .companyContact {
+            @include span(6 of 12);
+
+            float: right;
+
+            ul {
+                display: none;
+
+                @include breakpoint($small) {
+                    display: block;
+                }
+
+
+                @include breakpoint($medium) {
+                    padding-left: 20rem;
+                }
+
+
+                li {
+                    margin-top: 0,auto;
+                }
+
+                a {
+                    @include span(2 of 6);
+
+                    color: $green;
+                    margin-top: 2rem;
+                    font-size: 1.3rem;
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    font-size: 0;
+                }
+
+                a:hover:before {
+                    font-size: 13px;
+                    color: $black;
+                    content: attr(data-hover);
+                }
+
+                .phone {
+                    @include span(2 of 6);
+
+                    background: url(../images/icon_phone.png) no-repeat;
+                    height: 5rem;
+                    padding-left: 2rem;
+                }
+
+                .phone: before {
+                    background: url(../images/icon_phone.png) no-repeat;
+                };
+
+                .phone:hover, .phone:active, .phone:focus {
+                    background: url(../images/icon_phone_over.png) no-repeat;
+                }
+
+                .email {
+                    @include span(2 of 6);
+
+                    background: url(../images/icon_email.png) no-repeat;
+                    height: 5rem;
+                }
+
+                .email: before {
+                    background: url(../images/icon_email.png) no-repeat;
+                };
+
+                .email:hover, .email:active, .email:focus {
+                    background: url(../images/icon_email_over.png) no-repeat;
+                }
+            }
+        }
+    }
+
+    .headerHero {
+        .heroImage {
+            @include backImage("../images/heroBg/hero_image.png", to left, 0, 0, 30% top);
+
+            @include breakpoint($small) {
+                @include backImage("../images/heroBg/hero_image.png", to right, 0, 0, 10% top);
+            }
+
+
+            .heroText {
+                padding-top: 5rem;
+                padding-bottom: 2rem;
+
+                @include breakpoint($small) {
+                    padding-top: 18rem;
+                    padding-bottom: 15rem;
+                }
+
+
+                p {
+                    color: $white;
+                    text-align: center;
+                    padding-top: 2rem;
+                    font-size: 1.9rem;
+                }
+            }
+        }
+    }
+}

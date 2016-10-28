@@ -1,0 +1,173 @@
+#joinUs-Bg {
+    @include backImage("../images/heroBg/joinUs-Bg.png", to right, 0, 0, 30% top);
+
+    #joinUsLink {
+        padding: 6rem 0;
+
+        @include breakpoint($small) {
+            padding: 12rem 0;
+        }
+
+
+        .linkHeader {
+            text-align: center;
+
+            p:nth-child(2) {
+                color: $white;
+                padding: 4rem 0;
+                font-size: 1.8rem;
+            }
+
+            p:nth-child(3) {
+                background-color: $green;
+                display: inline-block;
+                text-align: center;
+                font-size: 1.3rem;
+                width: 20rem;
+                height: 4rem;
+                padding-top: .5rem;
+                margin-bottom: 2rem;
+
+                a {
+                    text-decoration: none;
+                    color: $black;
+                }
+
+                &:hover {
+                    background-color: $black;
+
+                    a {
+                        color: $white;
+                    }
+                }
+            }
+
+            p:nth-child(4) {
+                color: $green;
+                font-size: 1.7rem;
+                padding-top: 2rem;
+
+                span {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+#joinUs-info {
+    .floating-images {
+        @include clearfix;
+
+        .floating-image {
+            background-color: $black;
+            text-align: center;
+            padding: 2rem 0;
+            height: 35rem;
+
+            $item-width: 100%;
+
+            width: calc(#{$item-width}/1);
+            float: left;
+
+            @include breakpoint($small) {
+                width: calc(#{$item-width}/3);
+                padding: 3rem 2rem;
+            }
+
+
+            .blackText {
+                color: $white;
+                padding: 1.4rem;
+                text-align: left;
+
+                @include breakpoint($medium) {
+                    padding: 4rem;
+                }
+
+
+                h4 {
+                    font-size: 1.7rem;
+                }
+
+                p {
+                    text-align: left;
+                    line-height: 2rem;
+                    font-size: 1.5rem;
+                    padding-left: 1.3rem;
+                }
+            }
+        }
+    }
+}
+
+#joinUs-images {
+    @include clearfix;
+
+    margin: 6rem 0;
+
+    .joinUs-image {
+        img {
+            width: 100%;
+        }
+
+        .joinUs-imageCenter {
+            @include clearfix;
+
+            .CenterA {
+                @include breakpoint($medium) {
+                    @include span(4 of 12);
+
+                    img {
+                        height: 26rem;
+                    }
+                }
+            }
+
+            .CenterB {
+                @include breakpoint($medium) {
+                    @include span(8 of 12);
+
+                    img {
+                        height: 52rem;
+                    }
+                }
+            }
+        }
+
+        .joinUs-imageBottom {
+            @include clearfix;
+
+            img {
+                @include breakpoint($medium) {
+                    @include span(4 of 12);
+                }
+            }
+
+            .joinUs-text-Green {
+                background-color: $green;
+                padding-top: 4rem;
+
+                @include breakpoint($medium) {
+                    @include span(8 of 12);
+
+                    height: 25rem;
+                }
+
+
+                h4 {
+                    text-align: center;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $white;
+
+                    &:hover {
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+#contactUsBg {
+    @include backImage("../images/heroBg/contactUs-Bg.png", to right, 0, 0, 50% top);
+
+    #contactUsLink {
+        padding: 11rem 0;
+
+        p {
+            font-size: 2rem;
+        }
+    }
+}
+
+#address {
+    p {
+        text-align: center;
+        margin: 4rem .5rem;
+        font-weight: $light;
+        color: lighten($black, 0.1);
+
+        @include breakpoint($small) {
+            font-size: 2rem;
+            margin: 7rem 15rem;
+        }
+    }
+}

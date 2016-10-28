@@ -1,0 +1,214 @@
+.linkHeader {
+    a {
+        color: $green;
+        text-decoration: none;
+    }
+
+    p:nth-child(2) {
+        color: $white;
+        padding: 4rem 0;
+        font-size: 1.8rem;
+    }
+
+    p:nth-child(3) {
+        color: $green;
+        cursor: pointer;
+        font-size: 1.7rem;
+
+        span {
+            color: $white;
+        }
+    }
+}
+
+.linkContant {
+    @include breakpoint($medium) {
+        margin: 2rem 18rem;
+    }
+
+
+    .linkContant-TextA {
+        h2 {
+            padding: 2.5rem 0;
+
+            @include breakpoint($medium) {
+                padding: 4rem 4rem;
+            }
+        }
+
+        p {
+            text-align: center;
+            line-height: 2.5rem;
+            padding-bottom: 4rem;
+            padding-left: 3rem;
+            font-size: 1.8rem;
+        }
+    }
+
+    .linkContant-TextB {
+        @include breakpoint($medium) {
+            padding-top: 4rem;
+        }
+
+
+        h3 {
+            text-align: left;
+            padding: 2rem 2rem;
+            font-size: 2.2rem;
+            letter-spacing: .5px;
+        }
+
+        p {
+            text-align: left;
+            line-height: 2rem;
+            padding-bottom: 1rem;
+        }
+    }
+
+    .bulletPadding {
+        p {
+            padding-left: 2rem;
+        }
+    }
+}
+
+.doubleQuotes {
+    margin: 1.5rem 0;
+    padding: 1.5rem 1rem;
+    background-color: $black;
+    color: $white;
+    text-align: center;
+
+    @include clearfix;
+
+    @include breakpoint($medium) {
+        margin: 8rem 10rem 4rem 10rem;
+        padding: 1.5rem 8rem;
+    }
+
+
+    img {
+        @include breakpoint($small) {
+            float: left;
+            padding-top: .5rem;
+            padding-right: 1rem;
+        }
+    }
+
+    p {
+        @include breakpoint($small) {
+            font-size: 2rem;
+        }
+    }
+}
+
+.floatingElement {
+    text-align: center;
+    margin-bottom: 5rem;
+
+    @include breakpoint($small) {
+        margin-bottom: 6rem;
+    }
+
+
+    @include breakpoint($medium) {
+        margin-bottom: 8rem;
+    }
+
+
+    img {
+        padding: 2rem 0;
+    }
+
+    h3 {
+        text-align: center;
+        padding: 2rem 2rem;
+        font-size: 2.2rem;
+        letter-spacing: .5px;
+    }
+
+    p {
+        text-align: left;
+        font-size: 1.5rem;
+        letter-spacing: .3px;
+        padding-left: 2rem;
+        padding-bottom: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+.padding {
+    padding: 2rem 2rem;
+}
+
+#Linkfooter {
+    background-color: $black;
+    color: $white;
+    text-align: center;
+
+    h2 {
+        color: $white;
+    }
+
+    .btn {
+        display: inline-block;
+        background-color: $green;
+        height: 4rem;
+        padding-top: .5rem;
+        margin-bottom: 7rem;
+        margin-top: 3rem;
+        font-size: 1rem;
+        width: 15rem;
+
+        @include breakpoint($small) {
+            width: 22rem;
+            font-size: 1.3rem;
+        }
+
+
+        a {
+            text-decoration: none;
+            color: $black;
+        }
+
+        &:hover {
+            background-color: $white;
+
+            a {
+                color: $black;
+            }
+        }
+    }
+}
+
+.Quotes {
+    margin-bottom: 5rem;
+
+    p {
+        text-align: center;
+        font-size: 3rem;
+
+        @include breakpoint($medium) {
+            padding: 0 18rem;
+        }
+    }
+}
+
+#article {
+    background-color: $white;
+    padding: 2rem 0;
+
+    p {
+        padding: 1.5rem 0;
+        font-size: 1.8rem;
+
+        a {
+            text-decoration: none;
+            color: $green;
+
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+}

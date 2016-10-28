@@ -1,0 +1,44 @@
+#lifePolicy-Bg {
+    @include backImage("../images/heroBg/lifePolicy-Bg.png", to left, 0, 0, 50% top);
+
+    #lifePolicyLink {
+        padding: 8rem 0;
+
+        @include breakpoint($small) {
+            padding: 12rem 0;
+        }
+    }
+}
+
+#lifePolicy-info {
+    .floatingElement {
+        @include clearfix;
+
+        .floating-Section {
+            background-color: $backgroudgray;
+            text-align: center;
+            margin: 2rem 2rem;
+
+            $item-width: 90%;
+
+            width: calc(#{$item-width}/1);
+
+            @include breakpoint($small) {
+                width: calc(#{$item-width}/2);
+                float: left;
+                height: 100%;
+            }
+
+
+            @include breakpoint($medium) {
+                width: calc(#{$item-width}/2);
+                height: 180rem;
+            }
+
+
+            h3 {
+                text-align: left;
+            }
+        }
+    }
+}

@@ -1,0 +1,132 @@
+#whyChooseExe-Bg {
+    @include backImage("../images/heroBg/whyChooseExe-Bg.png", to left, 0, 0, 10% top);
+
+    #whyChooseExeLink {
+        padding: 6rem 0;
+
+        @include breakpoint($small) {
+            padding: 12rem 0;
+        }
+    }
+}
+
+#whyChooseExe-info {
+    .floatingElement {
+        text-align: center;
+        margin: 10rem 0;
+
+        .floating-Section {
+            margin-bottom: 2rem;
+
+            @include breakpoint($medium) {
+                margin: 2rem 10rem;
+            }
+
+
+            @include clearfix;
+
+            .image {
+                background-color: $black;
+                display: block;
+                padding-bottom: 4rem;
+                height: 28rem;
+
+                $item-width: 100%;
+
+                width: calc(#{$item-width}/1);
+                float: left;
+
+                @include breakpoint($small) {
+                    width: calc(#{$item-width}/3);
+                }
+
+
+                h3 {
+                    text-align: center;
+                    font-size: 1.8rem;
+                    padding-top: 4rem;
+                    color: $white;
+                }
+
+                img {
+                    margin: 0 auto;
+                }
+            }
+
+            .floating-Text {
+                background-color: $backgroudgray;
+                height: 28rem;
+                vertical-align: middle;
+                display: table-cell;
+                padding: 2rem 0;
+
+                h3 {
+                    text-align: left;
+                    padding: 1rem 4rem;
+                }
+
+                p {
+                    text-align: left;
+                    display: block;
+                    line-height: 1.5rem;
+                    padding: .3rem 4rem;
+                }
+            }
+        }
+    }
+
+    .floating-images {
+        margin-bottom: 4rem;
+
+        @include breakpoint($medium) {
+            margin: 8rem;
+        }
+
+
+        @include clearfix;
+
+        .floating-image {
+            background-color: $black;
+            text-align: center;
+            margin: .8rem;
+            height: 30rem;
+
+            $item-width: 90%;
+
+            width: calc(#{$item-width}/1);
+            float: left;
+
+            @include breakpoint($small) {
+                width: calc(#{$item-width}/2);
+            }
+
+
+            @include breakpoint($medium) {
+                width: calc(#{$item-width}/3);
+            }
+
+
+            img {
+                padding-top: 3rem;
+                height: 12rem;
+            }
+
+            .blackText {
+                color: $white;
+                text-align: center;
+                font-size: 1rem;
+                padding-top: 2rem;
+
+                h4 {
+                    padding-bottom: 2rem;
+                    letter-spacing: 0;
+                }
+
+                p {
+                    line-height: 15px;
+                    padding: 0 1rem;
+                }
+            }
+        }
+    }
+}

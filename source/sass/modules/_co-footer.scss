@@ -1,0 +1,106 @@
+#footer {
+    .aboutUs {
+        background-color: $black;
+        color: $white;
+
+        @include clearfix;
+
+        .information {
+            float: left;
+            margin-bottom: 3rem;
+            margin-top: 3rem;
+            width: calc(100% / 1);
+
+            @include breakpoint($small) {
+                width: calc(100% / 2);
+            }
+
+
+            @include breakpoint($medium) {
+                width: calc(100% / 4);
+            }
+
+
+            h4 {
+                padding: 1rem;
+
+                a {
+                    color: $white;
+                }
+            }
+
+            li {
+                background: url(../images/linkSlashBg.png) left center no-repeat;
+                font-weight: $narrow;
+                padding-left: 1rem;
+                text-align: left;
+                letter-spacing: .5px;
+                line-height: 2.5rem;
+                font-size: 1.2rem;
+                color: $green;
+                text-decoration: underline;
+
+                &:hover {
+                    color: $white;
+                    padding-left: 2rem;
+                    transition: all .5s;
+                }
+
+                span {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .axeBrand {
+        background-color: #000000;
+
+        .axeBrandName {
+            padding: 1.5rem 0;
+
+            @include breakpoint($medium) {
+                padding: 1.5rem 4rem;
+            }
+
+
+            @include clearfix;
+
+            .copyright {
+                color: $white;
+                font-size: 1rem;
+            }
+
+            .abstractInfo {
+                color: $green;
+                font-size: 1rem;
+            }
+
+            @include breakpoint($small) {
+                .copyright {
+                    float: left;
+                    font-size: 1.2rem;
+                }
+
+                .abstractInfo {
+                    float: right;
+                    font-size: 1.2rem;
+                }
+            }
+
+
+            @include breakpoint($small) {
+                @include container(70%);
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: $green;
+
+        &:hover {
+            color: $white;
+        }
+    }
+}

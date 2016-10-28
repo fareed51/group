@@ -1,0 +1,96 @@
+#insurance-Bg {
+    @include backImage("../images/heroBg/insurance-Bg.png", to left, 0, 0, 50% bottom);
+
+    #insuranceLink {
+        padding: 6rem 0;
+
+        @include breakpoint($small) {
+            padding: 12rem 0;
+        }
+    }
+}
+
+#insurance-info {
+    .floatingElement {
+        text-align: center;
+        margin: 10rem 0;
+
+        .floating-Section {
+            margin-bottom: 2rem;
+
+            @include breakpoint($medium) {
+                margin: 2rem 8rem;
+            }
+
+
+            @include clearfix;
+
+            .image {
+                background-color: $black;
+                display: block;
+                padding-bottom: 4rem;
+                height: 35rem;
+
+                $item-width: 100%;
+
+                width: calc(#{$item-width}/1);
+                float: left;
+
+                @include breakpoint($small) {
+                    width: calc(#{$item-width}/3);
+                }
+
+
+                img {
+                    margin: 0 auto;
+                    padding-top: 10rem;
+                }
+            }
+
+            .floating-Text {
+                background-color: $backgroudgray;
+                text-align: center;
+                height: 35rem;
+                vertical-align: middle;
+                display: table-cell;
+                padding: 2rem 0;
+
+                h3 {
+                    padding: 0 4rem;
+                    padding-bottom: 2rem;
+                }
+
+                p {
+                    text-align: center;
+                    display: block;
+                    line-height: 1.5rem;
+                    padding: .3rem 4rem;
+                }
+
+                .btn {
+                    display: inline-block;
+                    text-align: center;
+                    background-color: $green;
+                    font-size: 1.3rem;
+                    width: 18rem;
+                    height: 3.5rem;
+                    padding-top: .7rem;
+                    margin-top: 3rem;
+
+                    a {
+                        text-decoration: none;
+                        color: $black;
+                    }
+
+                    &:hover {
+                        background-color: $black;
+
+                        a {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

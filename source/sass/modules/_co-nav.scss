@@ -1,0 +1,62 @@
+#nav {
+    background-color: $black;
+
+    @include clearfix;
+
+    menu {
+        text-align: right;
+        cursor: pointer;
+
+        .fa-bars {
+            font-size: 2.5rem;
+            display: none;
+            cursor: pointer;
+            color: $green;
+
+            @include breakpoint(0 $medium) {
+                display: block;
+            }
+        }
+
+        .navigation {
+            display: none;
+
+            @include breakpoint($medium) {
+                display: block;
+                text-align: center;
+                height: 50px;
+            }
+
+
+            li {
+                border-bottom: $green 0.1rem solid;
+                padding-top: .5rem;
+
+                @include breakpoint($medium) {
+                    display: inline-block;
+                    font-weight: $bold;
+                    margin: 0 auto;
+                    font-size: 3rem;
+                    letter-spacing: .5px;
+                    padding-right: 6rem;
+                    border-bottom: none;
+                }
+
+
+                a {
+                    font-size: 1.3rem;
+                    color: $white;
+                    padding: 1rem;
+                    text-decoration: none;
+
+                    &:hover {
+                        @include breakpoint($small) {
+                            border-bottom: $green 0.5rem solid;
+                            transition: .2s ease-in, .2s ease-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

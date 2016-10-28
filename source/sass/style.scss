@@ -18,16 +18,45 @@
 @import "mixins";
 @import "base";
 
+//Body partials
+@import "body/arrowUp";
+@import "body/textAnimation";
+
 //modules
-@import "modules/header";
-@import "modules/nav";
-@import "modules/main";
-@import "modules/insureClients";
-@import "modules/insurenceBusiness";
-@import "modules/whatYouNeed";
-@import "modules/weWorkWith";
-@import "modules/chooseAxe";
-@import "modules/workingWithAxe";
-@import "modules/siteMap";
-@import "modules/companyLinks";
-@import "modules/footer";
+@import "modules/co-header";
+@import "modules/co-nav";
+@import "modules/co-main";
+@import "modules/co-siteMap";
+@import "modules/co-footer";
+@import "modules/home-successQoute";
+@import "modules/home-insuranceBusiness";
+@import "modules/home-whatYouNeed";
+@import "modules/home-weWorkWith";
+@import "modules/home-chooseAxe";
+@import "modules/home-workingWithAxe";
+
+//linkPages
+@import "modules/link-ContactUs";
+@import "modules/link-CEOs";
+@import "modules/link-COOs";
+@import "modules/link-CMOs";
+@import "modules/link-CIOs";
+@import "modules/link-Axelerator";
+@import "modules/link-Benefits";
+@import "modules/link-Components";
+@import "modules/link-whoWeAre";
+@import "modules/link-whyChooseExe";
+@import "modules/link-joinUs";
+@import "modules/link-insurance";
+@import "modules/link-lifePolicy";
+@import "modules/link-lifeClaims";
+@import "modules/link-GI-Policy";
+@import "modules/link-GI-Claims";
+@import "modules/link-whatYouNeed";
+@import "modules/link-ourWork";
+@import "modules/link-articles";
+@import "modules/link-projectFail";
+@import "modules/link-reduceComplexity";
+@import "modules/link-oneTouch";
+@import "modules/link-privacy";
+@import "modules/link-main";
